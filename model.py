@@ -4,7 +4,6 @@ from sklearn.metrics import accuracy_score, log_loss
 from tqdm import tqdm
 
 def initialisation(dimensions):
-    
     parametres = {}
     C = len(dimensions)
 
@@ -62,7 +61,6 @@ def predict(X, parametres):
   return Af >= 0.5
 
 def deep_neural_network(X, y, hidden_layers = (16, 16, 16), learning_rate = 0.001, n_iter = 3000):
-    
     # initialisation parametres
     dimensions = list(hidden_layers)
     dimensions.insert(0, X.shape[0])
